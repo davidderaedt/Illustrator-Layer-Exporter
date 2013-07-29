@@ -1,0 +1,55 @@
+body {
+    /*text-align:center;*/
+}
+
+
+#content {
+    margin-right:auto;
+    margin-left:auto;
+    vertical-align:middle;
+    width:100%;
+}
+
+.debugtools{
+    position:absolute;
+    top:0px;
+    right:0px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.debugtools li {
+    display:inline;
+    margin:3px 0px 3px 0px;
+}
+
+.notice {
+    font-style:italic;
+}
+
+#destination{
+    margin-top:10px;
+    margin-bottom:10px;    
+}
+
+#destLabel{
+    border:solid 1px #0;
+    display:inline;
+}
+
+.myRadio {
+    -webkit-appearance: none;
+    display:inline-block;    
+    margin:0px;
+    width:12px;
+    height:12px;
+    background-color: #AAAAAA;
+    border-color: #AAAAAA;
+    border-style:solid;
+    border-radius:6px;    
+}
+.myRadio:checked {
+    background-color: #333333;
+}

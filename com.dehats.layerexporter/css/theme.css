@@ -1,0 +1,16 @@
+/*
+This stylesheet represents CC app styles
+Empty classes will be edited at runtime with dynamic app values
+*/
+button
+{
+    border:1px solid;
+    border-radius:2px;
+    height:20px;
+    vertical-align:bottom;
+}
+
+.hostFont{}
+.hostBgd{}
+.hostElt{}
+
