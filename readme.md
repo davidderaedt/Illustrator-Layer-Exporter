@@ -4,7 +4,7 @@ The simplest way to export your vector assets!
 
 Layer exporter is a free, open source extension panel for Adobe Illustrator CC, made with the [creative cloud extensiblity helpers](http://davidderaedt.github.io/ccext-website/).
 
-###[DOWNLOAD LAYER EXPORTER (BETA)](https://github.com/davidderaedt/Illustrator-Layer-Exporter/blob/master/bin/LayerExporter.zxp)
+###[DOWNLOAD LAYER EXPORTER (BETA)](https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter.zxp)
 
 
 ##Export all Layers at once
@@ -26,7 +26,7 @@ Simply parse the JSON file, and place the image files according to the coordinat
 
 Since we have all the necessary information in the JSON file, creating a javascript reader for your files should be trivial for any web developer.
 
-[Click here for an example using jquery.](https://github.com/davidderaedt/Illustrator-Layer-Exporter/blob/master/bin/ai-export-reader.zip)
+[Click here for an example using jquery.](https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/ai-export-reader.zip)
 
 Just export your illustrator layers to the `img` folder, and launch the page from a webserver: your image should be completely recomposed, with each layer represented by a separate `<img>` tag, waiting to be animated.
 
