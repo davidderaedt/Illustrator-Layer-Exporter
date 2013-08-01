@@ -8,3 +8,8 @@ For general informations, please go to the Illustrator [Layer Exporter official 
 
 
 [![image](http://davidderaedt.github.io/AILayerExporterPage/images/pict.png)](http://davidderaedt.github.io/AILayerExporterPage/)
+
+
+##About the source code
+
+This repository is the source for the panel. The underlying logic, written in ExtendScript, is located in the CSscript repository.
