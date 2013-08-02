@@ -8,6 +8,7 @@ html{
 #container{
     margin: auto;
     position:relative;
+    overflow:hidden;
 }
 
 /*simple fade effect on rollover*/
