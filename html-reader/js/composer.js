@@ -21,6 +21,7 @@ var composer = (function () {
         $.getJSON(pDataURL, function (data) {
 
             $target.css("width", data.width);
+            $target.css("height", data.height);
 
             var count = data.layers.length;
             var i;
@@ -57,7 +58,7 @@ var composer = (function () {
                 list.push($el);
             }
             
-            cb(list);
+            cb(list, data);
         });
     }
 
