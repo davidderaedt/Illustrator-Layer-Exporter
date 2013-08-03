@@ -25,7 +25,7 @@ $._ext = (function () {
         }
 
         if (!destFolder) ext.selectDestination();
-        if (!destFolder) return ;        
+        if (!destFolder) return "";        
                                                 
         try {
             $.exportLayersAndData(eType, true, null, null, destFolder);
@@ -38,7 +38,8 @@ $._ext = (function () {
     
     ext.selectDestination = function() {
         destFolder = Folder.selectDialog("Select Destination");
-        return destFolder.absoluteURI;
+        if(destFolder) return destFolder.absoluteURI;
+        else return "";
     }
 
         
