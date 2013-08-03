@@ -17,11 +17,11 @@ $._ext = (function () {
         var eType;
         
         if (pVal === 0) {
-            eType = ExportType.SVG;
+            eType = "svg";
         } else if (pVal === 1) {
-            eType = ExportType.PNG24;
+            eType = "png";
         } else if (pVal === 2) {
-            eType = ExportType.JPEG;
+            eType = "jpg";
         }
 
         if (!destFolder) ext.selectDestination();
