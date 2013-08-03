@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.dehats.layerexporter" ExtensionBundleVersion="1.0.0"
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.dehats.layerexporter" ExtensionBundleVersion="1.0.1"
 		ExtensionBundleName="Layer Exporter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.dehats.layerexporter" Version="1.0" />
+		<Extension Id="com.dehats.layerexporter" Version="1.0.1" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
