@@ -12,23 +12,23 @@ $._ext = (function () {
     
     var destFolder;
     
-    ext.exportLayers = function (pVal) {
+    ext.exportLayers = function (pExportType, pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality) {
         
-        var eType;
+
+        var globalParams = {
+            exportType: pExportType,
+            precision: parseInt(pSVGPrecision, 10),//2,    
+            svgFont: (pOutlineSVGFont!=true),
+            jpgQuality: parseInt(pJPGQuality, 10),
+            embedImages: pEmbedSVGImages
+        };
         
-        if (pVal === 0) {
-            eType = "svg";
-        } else if (pVal === 1) {
-            eType = "png";
-        } else if (pVal === 2) {
-            eType = "jpg";
-        }
 
         if (!destFolder) ext.selectDestination();
         if (!destFolder) return "";        
                                                 
         try {
-            $.exportLayersAndData(eType, true, null, null, destFolder);
+            $.exportLayersAndData(globalParams, true, null, null, destFolder);
         } catch (e) {
             alert("Exception:" + e);
         }
