@@ -8,6 +8,28 @@ button
     border-radius:2px;
     height:20px;
     vertical-align:bottom;
+    font-family:inherit;
+    color:inherit;
+    font-size:inherit;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    display:inline-block;    
+    margin:2px;
+    width:12px;
+    height:12px;
+    background-color: #AAAAAA;
+    border-color: #AAAAAA;
+    border-style:solid;
+    border-radius:6px;    
+}
+input[type="radio"] + label{
+    display:inline-block;
+    vertical-align:super;
+}
+input[type="radio"]:checked {
+    background-color: #333333;
 }
 
 .hostFont{}
