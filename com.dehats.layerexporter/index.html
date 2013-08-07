@@ -12,48 +12,69 @@
     <div id="content">
         
         <div id="main">
-            
-            <p class="hostFont">Default Export type:</p>
-            
-            <input type="radio" class="myRadio" name="group1" value="0" checked>
-            <label class="hostFont">SVG</label><br>
-            
-            <input type="radio" class="myRadio" name="group1" value="1" >
-            <label class="hostFont">PNG</label><br>
 
-            <input type="radio" class="myRadio" name="group1" value="2" >
-            <label class="hostFont">JPEG</label><br>
-
-            <p class="hostFont notice">(Add ".jpg" ".png" or ".svg" to your layer name to override the default export type)</p>
-
-            <div id="destination">
-                <button id="btn_dest" class="hostElt hostFont">Destination:</button> 
-                <label id="destLabel" class="hostFont">-</label>
-            </div>
-                      
+            <button id="btn_exec">Export Layers</button>
+            
             <hr>
+            <h4>Destination Folder</h4>
+            
+            <div id="destination">
+                <button id="btn_dest">Browse</button> 
+                <label id="destLabel">-</label>
+            </div>
+            <hr>
+                                    
+            <h4>Default Export Parameters</h4>
+            
+            <label id="exportLabel">Export type:</label>
+            <div id="exportOptions">
+                <input type="radio" name="group1" value="svg" checked>
+                <label class="hostFont">SVG</label><br>
                 
-            <button id="btn_exec"
-                class="hostElt hostFont">
-                Export Layers Now</button>            
+                <input type="radio"name="group1" value="png" >
+                <label class="hostFont">PNG</label><br>
+    
+                <input type="radio" name="group1" value="jpg" >
+                <label class="hostFont">JPEG</label><br>                
+            </div>
+            
+            <p class="notice">(Add ".jpg" ".png" or ".svg" to your layer name to override the default export type)</p>
+
+            
+            <label>JPG Quality</label>
+            <input id="jpgquality" type="number" min="1" max="100" value="90"><label>%</label>
+            <br>
+
+            <input id="svgFont" type="checkbox" checked>
+            <label>Outline SVG Text</label>
+            <br>
+            
+            <input id="svgEmbed" type="checkbox" checked>
+            <label>Embed SVG Images</label>
+            <br>
+
+            <label>SVG Decimal Precision</label>            
+            <input id="svgPrecision" type="number" min="1" max="4" value="2">
+                                                
+            <hr>
+            
+            <h4>For help and informations:</h4>
+            
+            <code>http://davidderaedt.github.io/AILayerExporterPage/</code>
+            
             
         </div>
 
+
 <!--
+
         <ul class="debugtools">            
-            <li>
-                <button id="btn_debug" 
-                        class="hostElt hostFont">
-                        DT</button>
-            </li>            
-            <li>
-                <button id="btn_reload" 
-                        class="hostElt hostFont">
-                        RP</button>
-            </li>
-    
+            <li><button id="btn_debug">Df</button></li>            
+            <li><button id="btn_reload">Rf</button></li>
         </ul>
+
 -->
+
     </div>
     
     <script src="js/libs/CSInterface-4.0.0.js"></script>
