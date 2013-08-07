@@ -40,17 +40,25 @@
         $("#btn_reload").click(reloadPanel);
         
         $("#btn_dest").click(function () {
-            csInterface.evalScript("$._ext.selectDestination()", function (result) {
-                $("#destLabel").html(result);
+            csInterface.evalScript("$._ext.selectDestination()", function (destPath) {
+                $("#destLabel").html(destPath);
             });
         });
                 
         $("#btn_exec").click(function () {
-            var val = $('input:radio[name=group1]:checked').val();
-            var code = '$._ext.exportLayers(' + val + ');';
+            var exportType = $('input:radio[name=group1]:checked').val();
+            var precision = $('#svgPrecision').val();
+            var outlineFonts = $('#svgFont').is(':checked');
+            var embedImages = $('#svgEmbed').is(':checked');
+            var jpgquality = $('#jpgquality').val();
+            
+            
+            var code = '$._ext.exportLayers("' + exportType + '", ' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality + ');';
+            
             console.log(code);
-            csInterface.evalScript(code, function (result) {
-                console.log("returned:" + result);
+            
+            csInterface.evalScript(code, function (destPath) {
+                $("#destLabel").html(destPath);
             });
         });
     }
