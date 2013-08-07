@@ -1,4 +1,4 @@
-body {
+ body {
     /*text-align:center;*/
 }
 
@@ -10,6 +10,11 @@ body {
     width:100%;
 }
 
+#exportOptions{
+    display:inline-block;
+    width:auto;
+}
+
 .debugtools{
     position:absolute;
     top:0px;
@@ -18,6 +23,10 @@ body {
     padding: 0;
     list-style-type: none;
     text-align: center;
+}
+
+#exportLabel{
+    vertical-align:top;
 }
 
 .debugtools li {
@@ -39,17 +48,12 @@ body {
     display:inline;
 }
 
-.myRadio {
-    -webkit-appearance: none;
-    display:inline-block;    
-    margin:0px;
-    width:12px;
-    height:12px;
-    background-color: #AAAAAA;
-    border-color: #AAAAAA;
-    border-style:solid;
-    border-radius:6px;    
+
+input[type="checkbox"]:checked {
+    margin-top:10px;
 }
-.myRadio:checked {
-    background-color: #333333;
+
+
+hr{
+   
 }
