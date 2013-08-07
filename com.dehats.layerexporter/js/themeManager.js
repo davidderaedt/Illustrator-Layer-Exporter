@@ -66,25 +66,32 @@ var themeManager = (function () {
        
         var eltBgdColor =  toHex(panelBgColor, 20);
         
-        var fontColor = "EEEEEE";
+        var fontColor = "F0F0F0";
         if (panelBgColor.red > 122) {
             fontColor = "000000";
         }
         var borderColor = toHex(panelBgColor, -100);
-        
-        console.log(appSkinInfo);
-        console.log(document.body.bgColor);
-        
+                
         var styleId = "hostStyle";
- 
+        addRule(styleId, "body", "background-color:" + "#" + bgdColor);
+        addRule(styleId, "body", "font-size:" + appSkinInfo.baseFontSize + "px;");
+        addRule(styleId, "body", "font-family:" + appSkinInfo.baseFontFamily);
+        addRule(styleId, "body", "color:" + "#" + fontColor);
+                        
+        addRule(styleId, "button", "background-color:" + "#" + eltBgdColor);
+        addRule(styleId, "button:hover", "background-color:" + "#" + bgdColor);
+        addRule(styleId, "button:active", "background-color:" + "#" + eltBgdColor);
+        addRule(styleId, "button", "border-color: " + "#" + borderColor);
+        
+
         addRule(styleId, ".hostFont", "font-size:" + appSkinInfo.baseFontSize + "px;");
         addRule(styleId, ".hostFont", "font-family:" + appSkinInfo.baseFontFamily);
         addRule(styleId, ".hostFont", "color:" + "#" + fontColor);
                         
         addRule(styleId, ".hostBgd", "background-color:" + "#" + bgdColor);
-        addRule(styleId, "body", "background-color:" + "#" + bgdColor);        
         addRule(styleId, ".hostElt", "background-color:" + "#" + eltBgdColor);
         addRule(styleId, ".hostElt", "border-color: " + "#" + borderColor);
+
     }
     
     
