@@ -1,5 +1,9 @@
  body {
-    /*text-align:center;*/
+    margin: 10px;
+    font-family: futura, sans-serif;
+    font-size: 0.7em;
+    font-weight:100;
+    color: #dbd9cd;
 }
 
 
@@ -10,50 +14,21 @@
     width:100%;
 }
 
-#exportOptions{
-    display:inline-block;
-    width:auto;
+.topcoat-range {
+    vertical-align: middle;
 }
 
-.debugtools{
-    position:absolute;
-    top:0px;
-    right:0px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
+#btn_exec{
+    width: 100%;
 }
 
-#exportLabel{
-    vertical-align:top;
+#tabBar{
+
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.debugtools li {
-    display:inline;
-    margin:3px 0px 3px 0px;
+.panel{
+    display: none;
 }
 
-.notice {
-    font-style:italic;
-}
-
-#destination{
-    margin-top:10px;
-    margin-bottom:10px;    
-}
-
-#destLabel{
-    border:solid 1px #0;
-    display:inline;
-}
-
-
-input[type="checkbox"]:checked {
-    margin-top:10px;
-}
-
-
-hr{
-   
-}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<ExtensionList>
+    <Extension Id="com.dehats.layerexporter.dev">
+        <HostList>
+           <Host Name="ILST" Port="8088"/> 
+        </HostList>
+    </Extension>
+</ExtensionList>
+ 

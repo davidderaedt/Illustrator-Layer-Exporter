@@ -34,12 +34,45 @@
                 
         themeManager.init();
         
-        loadJSXFile("/jsx/exportLayerAndData.jsxbin");
         
-        $("#btn_debug").click(showDevTools);
+        // Menu mgmt
+        var $currentPanel;
+        
+        function showPanel(pId) {
+            if($currentPanel) $currentPanel.hide();
+            $currentPanel =  $(pId);
+            $currentPanel.show();            
+        }        
+        
+        $("#mainPanelBt").click(function(){ showPanel("#mainPanel")});
+        $("#optionsPanelBt").click(function(){ showPanel("#optionsPanel")});
+        $("#outputPanelBt").click(function(){ showPanel("#outputPanel")});        
+        $("#toolsPanelBt").click(function(){ showPanel("#toolsPanel")});
+        
+        showPanel("#mainPanel");
+        
+        
+        
+        // Business logic
+        
+        loadJSXFile("/jsx/exportLayersAndData.jsxbin");
+
+        $("#newLayerBt").click(function(){
+            loadJSXFile("/jsx/newLayerFromSel.jsx");
+        });
+        $("#distribBt").click(function(){
+            loadJSXFile("/jsx/distribSelectionToLayers.jsx");
+        });
+        
+        
         $("#btn_reload").click(reloadPanel);
+
+        $("#helpLink").click(function(){
+             window.cep.util.openURLInDefaultBrowser("http://davidderaedt.github.io/AILayerExporterPage/");
+        });
         
-        $("#btn_dest").click(function () {
+        
+        $("#destBt").click(function () {
             csInterface.evalScript("$._ext.selectDestination()", function (destPath) {
                 $("#destLabel").html(destPath);
             });
@@ -51,9 +84,11 @@
             var outlineFonts = $('#svgFont').is(':checked');
             var embedImages = $('#svgEmbed').is(':checked');
             var jpgquality = $('#jpgquality').val();
+            var toHTML = $('#toHTML').is(':checked');
+            var toEdgeAnimate = $('#edgeAnimate').is(':checked');
             
             
-            var code = '$._ext.exportLayers("' + exportType + '", ' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality + ');';
+            var code = '$._ext.exportLayers("' + exportType + '", ' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality + ', ' + toHTML + ', ' + toEdgeAnimate + ');';
             
             console.log(code);
             

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.dehats.layerexporter" ExtensionBundleVersion="1.1"
+<ExtensionManifest Version="4.0" ExtensionBundleId="com.dehats.layerexporter.dev" ExtensionBundleVersion="1.4.0"
 		ExtensionBundleName="Layer Exporter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Abstract><![CDATA[Export all layers separately with one click!]]></Abstract>    
 	<ExtensionList>
-		<Extension Id="com.dehats.layerexporter" Version="1.1" />
+		<Extension Id="com.dehats.layerexporter.dev" Version="1.4.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
@@ -18,7 +18,7 @@
 		</RequiredRuntimeList>
 	</ExecutionEnvironment>
 	<DispatchInfoList>
-		<Extension Id="com.dehats.layerexporter">
+		<Extension Id="com.dehats.layerexporter.dev">
 			<DispatchInfo >
 				<Resources>
 				<MainPath>./index.html</MainPath>
@@ -29,7 +29,7 @@
 				</Lifecycle>
 				<UI>
 					<Type>Panel</Type>
-					<Menu>Layer Exporter</Menu>
+					<Menu>Layer Exporter-dev</Menu>
 					<Geometry>
 						<Size>
 							<Height>300</Height>

@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+
+<!-- <link id="hostStyle" rel="stylesheet" href="css/theme.css"/> -->    
+<link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
 <link rel="stylesheet" href="css/styles.css"/>
-<link id="hostStyle" rel="stylesheet" href="css/theme.css"/>
+
 <title></title>
 </head>
 
@@ -12,68 +15,146 @@
     <div id="content">
         
         <div id="main">
-
-            <button id="btn_exec">Export Layers</button>
             
-            <hr>
-            <h4>Destination Folder</h4>
             
-            <div id="destination">
-                <button id="btn_dest">Browse</button> 
-                <label id="destLabel">-</label>
+            <div>                
+                <button id="btn_exec" class="topcoat-button--large--cta">Export Layers</button>                
+            </div>            
+            
+            
+            
+            <div id="tabBar" class="topcoat-button-bar">
+              <div class="topcoat-button-bar__item">
+                <button id="mainPanelBt" class="topcoat-button-bar__button">Main</button>
+              </div>
+              <div class="topcoat-button-bar__item">
+                <button id="optionsPanelBt" class="topcoat-button-bar__button">Options</button>
+              </div>
+              <div class="topcoat-button-bar__item">
+                <button id="outputPanelBt" class="topcoat-button-bar__button">Output</button>
+              </div>
+              <div class="topcoat-button-bar__item">
+                <button id="toolsPanelBt" class="topcoat-button-bar__button">Tools</button>
+              </div>
             </div>
-            <hr>
-                                    
-            <h4>Default Export Parameters</h4>
+                        
             
-            <label id="exportLabel">Export type:</label>
-            <div id="exportOptions">
-                <input type="radio" name="group1" value="svg" checked>
-                <label class="hostFont">SVG</label><br>
+            
+            
+            
+            <div id="mainPanel" class="panel">
+            
+                <p class="notice">Add .jpg, .png or .svg to layers names to set file type.</p>
+
+                <label id="exportOptionsLabel">Save other layers as:</label>
+                <div id="exportOptions">
+
+                    <label class="topcoat-radio-button">
+                      <input type="radio" name="group1" value="svg" checked>
+                      <div class="topcoat-radio-button__checkmark"></div>
+                      SVG
+                    </label>
+                    <br>
+
+                    <label class="topcoat-radio-button">
+                      <input type="radio" name="group1" value="png" >
+                      <div class="topcoat-radio-button__checkmark"></div>
+                      PNG
+                    </label>
+                    <br>
+
+
+                    <label class="topcoat-radio-button">
+                      <input type="radio" name="group1" value="jpg" >
+                      <div class="topcoat-radio-button__checkmark"></div>
+                      JPG
+                    </label>
+                    <br>
+                    <br>
+
+                </div>
                 
-                <input type="radio"name="group1" value="png" >
-                <label class="hostFont">PNG</label><br>
-    
-                <input type="radio" name="group1" value="jpg" >
-                <label class="hostFont">JPEG</label><br>                
             </div>
             
-            <p class="notice">(Add ".jpg" ".png" or ".svg" to your layer name to override the default export type)</p>
+            
+            
+            <div id="optionsPanel" class="panel">
+                <label>JPG Quality</label>
 
-            
-            <label>JPG Quality</label>
-            <input id="jpgquality" type="number" min="1" max="100" value="90"><label>%</label>
-            <br>
+                <input id="jpgquality" type="number" min="1" max="100" value="90" class="topcoat-text-input"><label>%</label>
+                <br><br>
 
-            <input id="svgFont" type="checkbox" checked>
-            <label>Outline SVG Text</label>
-            <br>
-            
-            <input id="svgEmbed" type="checkbox" checked>
-            <label>Embed SVG Images</label>
-            <br>
 
-            <label>SVG Decimal Precision</label>            
-            <input id="svgPrecision" type="number" min="1" max="4" value="2">
-                                                
-            <hr>
+                <label class="topcoat-checkbox">
+                  <input id="svgFont" type="checkbox" checked>
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Outline SVG Text
+                </label>            
+                <br><br>
+
+
+                <label class="topcoat-checkbox">
+                  <input id="svgEmbed" type="checkbox" checked>
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Embed SVG Images
+                </label> 
+                <br><br>
+
+
+                <label>SVG Decimal Precision</label>            
+                <input id="svgPrecision" type="number" min="1" max="4" value="1" class="topcoat-text-input">
+                <br><br>
+                
+            </div>            
             
-            <h4>For help and informations:</h4>
-            
-            <code>http://davidderaedt.github.io/AILayerExporterPage/</code>
             
             
+            <div id="outputPanel" class="panel">
+
+                
+                <label>Destination:</label>
+                <label id="destLabel">.</label>
+                <button id="destBt" class="topcoat-button">...</button>
+
+                <br><br>
+
+                <label class="topcoat-checkbox">
+                  <input id="toHTML" type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Create HTML file
+                </label> 
+                <br><br>
+
+                <label class="topcoat-checkbox">
+                  <input id="edgeAnimate" type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Import to Edge Animate Project
+                </label> 
+                <br><br>
+                
+            </div>
+            
+            
+            
+            
+
+            <div id="toolsPanel" class="panel">
+
+                <button id="newLayerBt" class="topcoat-button">Move selection to 1 new layer</button>
+                <br><br>
+
+                <button id="distribBt" class="topcoat-button">Move selection to multiple new layers</button>
+                <br><br>
+                
+                <hr>
+
+                <button id="helpLink" class="topcoat-button">Need Help?</button>
+                
+            </div>
+                         
+
         </div>
 
-
-<!--
-
-        <ul class="debugtools">            
-            <li><button id="btn_debug">Df</button></li>            
-            <li><button id="btn_reload">Rf</button></li>
-        </ul>
-
--->
 
     </div>
     

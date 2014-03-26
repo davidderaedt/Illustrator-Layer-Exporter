@@ -12,7 +12,7 @@ $._ext = (function () {
     
     var destFolder;
     
-    ext.exportLayers = function (pExportType, pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality) {
+    ext.exportLayers = function (pExportType, pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality, pToHTML,  pToEdgeAnimate) {
         
 
         var globalParams = {
@@ -28,7 +28,7 @@ $._ext = (function () {
         if (!destFolder) return "";        
                                                 
         try {
-            $.exportLayersAndData(globalParams, true, null, null, destFolder);
+            $.exportLayersAndData(globalParams, true, null, null, destFolder, pToHTML, pToEdgeAnimate);
         } catch (e) {
             alert("Exception:" + e);
         }
