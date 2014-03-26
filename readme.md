@@ -1,8 +1,4 @@
-Layer Exporter for Adobe Illustrator
-
-
-###For general informations, please go to the Illustrator [Layer Exporter official page](http://davidderaedt.github.io/AILayerExporterPage/).
-
+#Layer Exporter for Adobe Illustrator
 
 
 Layer exporter is a free, open source extension panel for Adobe Illustrator CC, made with the [creative cloud extensiblity helpers](http://davidderaedt.github.io/ccext-website/).
@@ -11,7 +7,7 @@ Layer Exporter lets you automatically export Illustrator layers to SVG, JPG or P
 
 [![image](http://davidderaedt.github.io/AILayerExporterPage/images/pict.png)](http://davidderaedt.github.io/AILayerExporterPage/)
 
-This is the development branch of the panel, it can be installed side by side with the current build
+This is the development branch of the panel, it can be installed side by side with the production build (currently 1.0). For general informations, please go to the Illustrator [Layer Exporter official page](http://davidderaedt.github.io/AILayerExporterPage/).
 
 ##Release notes
 
