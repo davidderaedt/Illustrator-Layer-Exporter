@@ -1,4 +1,4 @@
-#[Layer Exporter for Adobe Illustrator](Layer Exporter official page](http://davidderaedt.github.io/AILayerExporterPage/)
+Layer Exporter for Adobe Illustrator
 
 
 ###For general informations, please go to the Illustrator [Layer Exporter official page](http://davidderaedt.github.io/AILayerExporterPage/).
