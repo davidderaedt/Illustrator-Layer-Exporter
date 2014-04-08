@@ -18,67 +18,92 @@
             
             
             <div>                
-                <button id="btn_exec" class="topcoat-button--large--cta">Export Layers</button>                
+                <button id="btn_exec" class="topcoat-button--large--cta">Export</button>                
             </div>            
             
             
             
-            <div id="tabBar" class="topcoat-button-bar">
-              <div class="topcoat-button-bar__item">
-                <button id="mainPanelBt" class="topcoat-button-bar__button">Main</button>
-              </div>
-              <div class="topcoat-button-bar__item">
-                <button id="optionsPanelBt" class="topcoat-button-bar__button">Options</button>
-              </div>
-              <div class="topcoat-button-bar__item">
-                <button id="outputPanelBt" class="topcoat-button-bar__button">Output</button>
-              </div>
-              <div class="topcoat-button-bar__item">
-                <button id="toolsPanelBt" class="topcoat-button-bar__button">Tools</button>
-              </div>
+            <div id="tabBar" class="topcoat-tab-bar">
+                <label class="topcoat-tab-bar__item" id="mainPanelBt" >
+                    <input type="radio" name="tab-bar" checked>
+                    <button class="topcoat-tab-bar__button">Tools</button>
+                  </label>
+                  <label class="topcoat-tab-bar__item" id="optionsPanelBt">
+                    <input type="radio" name="tab-bar">
+                    <button class="topcoat-tab-bar__button">Options</button>
+                  </label>
+                  <label class="topcoat-tab-bar__item" id="outputPanelBt">
+                    <input type="radio" name="tab-bar">
+                    <button class="topcoat-tab-bar__button">Output</button>
+                  </label>        
+                  <label class="topcoat-tab-bar__item" id="toolsPanelBt">
+                    <input type="radio" name="tab-bar">
+                    <button class="topcoat-tab-bar__button">Help</button>
+                  </label>                 
+
             </div>
                         
             
             
             
-            
             <div id="mainPanel" class="panel">
-            
-                <p class="notice">Add .jpg, .png or .svg to layers names to set file type.</p>
-
-                <label id="exportOptionsLabel">Save other layers as:</label>
-                <div id="exportOptions">
-
-                    <label class="topcoat-radio-button">
-                      <input type="radio" name="group1" value="svg" checked>
-                      <div class="topcoat-radio-button__checkmark"></div>
-                      SVG
-                    </label>
-                    <br>
-
-                    <label class="topcoat-radio-button">
-                      <input type="radio" name="group1" value="png" >
-                      <div class="topcoat-radio-button__checkmark"></div>
-                      PNG
-                    </label>
-                    <br>
-
-
-                    <label class="topcoat-radio-button">
-                      <input type="radio" name="group1" value="jpg" >
-                      <div class="topcoat-radio-button__checkmark"></div>
-                      JPG
-                    </label>
-                    <br>
-                    <br>
-
-                </div>
                 
+                <label>Set all layers as:</label>
+                <br>
+                <div class="topcoat-button-bar">
+                  <div class="topcoat-button-bar__item">
+                    <button id="layer2SVGBt" class="topcoat-button-bar__button">SVG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="layer2PNGBt" class="topcoat-button-bar__button">PNG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="layer2JPGBt" class="topcoat-button-bar__button">JPG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="layer2NoneBt" class="topcoat-button-bar__button">None</button>
+                  </div>
+                </div>
+                <br>
+                
+                
+                <label>Set selected items as:</label>
+                <br>
+                <div class="topcoat-button-bar">
+                  <div class="topcoat-button-bar__item">
+                    <button id="items2SVGBt" class="topcoat-button-bar__button">SVG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="items2PNGBt" class="topcoat-button-bar__button">PNG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="items2JPGBt" class="topcoat-button-bar__button">JPG</button>
+                  </div>
+                  <div class="topcoat-button-bar__item">
+                    <button id="items2NoneBt" class="topcoat-button-bar__button">None</button>
+                  </div>
+                </div>
+                <br>
+                
+                
+                <label>Move selected items to :</label>
+                <br>
+                <div class="topcoat-button-bar">
+                  <div class="topcoat-button-bar__item">
+                    <button id="newLayerBt" class="topcoat-button-bar__button">One layer</button>
+                  </div>
+                    
+                  <div class="topcoat-button-bar__item">
+                    <button id="distribBt" class="topcoat-button-bar__button">Multiple layers</button>
+                  </div>
+                </div>
+
             </div>
             
             
             
             <div id="optionsPanel" class="panel">
+                
                 <label>JPG Quality</label>
 
                 <input id="jpgquality" type="number" min="1" max="100" value="90" class="topcoat-text-input"><label>%</label>
@@ -121,7 +146,14 @@
                 <label class="topcoat-checkbox">
                   <input id="toHTML" type="checkbox">
                   <div class="topcoat-checkbox__checkmark"></div>
-                  Create HTML file
+                  Create HTML file in parent folder
+                </label> 
+                <br><br>
+                
+                <label class="topcoat-checkbox">
+                  <input id="sepCSSCb" type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Create separate CSS file
                 </label> 
                 <br><br>
 
@@ -129,6 +161,13 @@
                   <input id="edgeAnimate" type="checkbox">
                   <div class="topcoat-checkbox__checkmark"></div>
                   Import to Edge Animate Project
+                </label> 
+                <br><br>
+
+                <label class="topcoat-checkbox">
+                  <input id="jsonCb" type="checkbox">
+                  <div class="topcoat-checkbox__checkmark"></div>
+                  Create JSON data file
                 </label> 
                 <br><br>
                 
@@ -140,18 +179,14 @@
 
             <div id="toolsPanel" class="panel">
 
-                <button id="newLayerBt" class="topcoat-button">Move selection to 1 new layer</button>
-                <br><br>
+                <p>Simply rename your layers and vector items to the destination file name (e.g. "logo.svg"). You can use the Helpers functions to automate this process. </p>
 
-                <button id="distribBt" class="topcoat-button">Move selection to multiple new layers</button>
-                <br><br>
-                
-                <hr>
-
-                <button id="helpLink" class="topcoat-button">Need Help?</button>
+                <button id="helpLink" class="topcoat-button">Need More Help?</button>
+            
                 
             </div>
-                         
+
+
 
         </div>
 

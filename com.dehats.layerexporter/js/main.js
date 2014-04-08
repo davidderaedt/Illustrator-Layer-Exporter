@@ -39,6 +39,7 @@
         var $currentPanel;
         
         function showPanel(pId) {
+            console.log("showing "+ pId);
             if($currentPanel) $currentPanel.hide();
             $currentPanel =  $(pId);
             $currentPanel.show();            
@@ -56,16 +57,23 @@
         // Business logic
         
         loadJSXFile("/jsx/exportLayersAndData.jsxbin");
+        loadJSXFile("/jsx/Renamer.jsx");
 
-        $("#newLayerBt").click(function(){
-            loadJSXFile("/jsx/newLayerFromSel.jsx");
-        });
-        $("#distribBt").click(function(){
-            loadJSXFile("/jsx/distribSelectionToLayers.jsx");
-        });
+        
+        $("#layer2SVGBt").click(function(){csInterface.evalScript("$.appendToAllLayers('.svg');");});
+        $("#layer2PNGBt").click(function(){csInterface.evalScript("$.appendToAllLayers('.png');");});
+        $("#layer2JPGBt").click(function(){csInterface.evalScript("$.appendToAllLayers('.jpg');");});
+        $("#layer2NoneBt").click(function(){csInterface.evalScript("$.appendToAllLayers('');");});
+
+        $("#items2SVGBt").click(function(){csInterface.evalScript("$.appendToSelNames('.svg');");});
+        $("#items2PNGBt").click(function(){csInterface.evalScript("$.appendToSelNames('.png');");});
+        $("#items2JPGBt").click(function(){csInterface.evalScript("$.appendToSelNames('.jpg');");});
+        $("#items2NoneBt").click(function(){csInterface.evalScript("$.appendToSelNames('');");});
         
         
-        $("#btn_reload").click(reloadPanel);
+        $("#newLayerBt").click(function(){loadJSXFile("/jsx/newLayerFromSel.jsx");});
+        $("#distribBt").click(function(){loadJSXFile("/jsx/distribSelectionToLayers.jsx");});
+        
 
         $("#helpLink").click(function(){
              window.cep.util.openURLInDefaultBrowser("http://davidderaedt.github.io/AILayerExporterPage/");
@@ -79,16 +87,17 @@
         });
                 
         $("#btn_exec").click(function () {
-            var exportType = $('input:radio[name=group1]:checked').val();
             var precision = $('#svgPrecision').val();
             var outlineFonts = $('#svgFont').is(':checked');
             var embedImages = $('#svgEmbed').is(':checked');
             var jpgquality = $('#jpgquality').val();
             var toHTML = $('#toHTML').is(':checked');
             var toEdgeAnimate = $('#edgeAnimate').is(':checked');
+            var createJSON = $('#jsonCb').is(':checked');
+            var sepCSS = $('#sepCSSCb').is(':checked');
             
-            
-            var code = '$._ext.exportLayers("' + exportType + '", ' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality + ', ' + toHTML + ', ' + toEdgeAnimate + ');';
+            var code = '$._ext.exportLayers(' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality;
+            code += ', ' + createJSON + ', ' + toHTML + ', ' + sepCSS + ', ' + toEdgeAnimate + ');';
             
             console.log(code);
             

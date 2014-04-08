@@ -9,30 +9,36 @@ $._ext = (function () {
     'use strict';
     
     var ext = {};
-    
     var destFolder;
     
-    ext.exportLayers = function (pExportType, pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality, pToHTML,  pToEdgeAnimate) {
+    ext.exportLayers = function (pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality, 
+                                  pCreateJSON, pToHTML, pSepCss, pToEdgeAnimate) {
         
-
-        var globalParams = {
-            exportType: pExportType,
-            precision: parseInt(pSVGPrecision, 10),//2,    
+        var imageParams = {
+            precision: parseInt(pSVGPrecision, 10),
             svgFont: (pOutlineSVGFont!=true),
             jpgQuality: parseInt(pJPGQuality, 10),
             embedImages: pEmbedSVGImages
         };
         
+        var outputParams = {
+            createJSON:pCreateJSON,
+            toHTML:pToHTML,
+            sepCss:pSepCss,
+            toEdgeAnimate:pToEdgeAnimate
+        };
+        
 
         if (!destFolder) ext.selectDestination();
-        if (!destFolder) return "";        
+        if (!destFolder) return "";
                                                 
         try {
-            $.exportLayersAndData(globalParams, true, null, null, destFolder, pToHTML, pToEdgeAnimate);
+            $.exportLayersAndData(imageParams, outputParams, destFolder);
         } catch (e) {
             alert("Exception:" + e);
         }
         return destFolder.absoluteURI;
+        
     };
     
     
@@ -64,6 +70,8 @@ $._ext = (function () {
             }
         }
     };
+    
+    
     
     return ext;
     
