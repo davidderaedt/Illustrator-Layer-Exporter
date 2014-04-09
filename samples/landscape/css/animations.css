@@ -1,0 +1,110 @@
+/*TITLE*/
+@keyframes "appear" {
+ 0% {  	opacity: 0;}
+ 100% {  	opacity: 1;}
+}
+
+@-moz-keyframes appear {
+ 0% {   opacity: 0; }
+ 100% {   opacity: 1; }
+}
+
+@-webkit-keyframes "appear" {
+ 0% {   opacity: 0; }
+ 100% {   opacity: 1; }
+}
+
+
+.animate #Title {
+/*animation: <name> || <duration> || <timing-function> || <delay> || <iteration-count> || <direction> || <fill-mode>*/    
+    animation:appear 5s;    
+	-webkit-animation: appear 5s;  
+	-moz-animation: appear 5s;
+}
+
+/*SUN*/
+@keyframes "sunset" {
+ 0% {   	transform: translate(0px, 0px); }
+ 50% {   	transform: translate(-70px, 250px); }
+ 100% {   	transform: translate(0px, 0px); }
+}
+
+@-moz-keyframes sunset {
+ 0% {   -moz-transform: translate(0px, 0px); }
+ 50% {   -moz-transform: translate(-70px, 250px); }
+ 100% {   -moz-transform: translate(0px, 0px); }
+}
+
+@-webkit-keyframes "sunset" {
+ 0% {   -webkit-transform: translate(0px, 0px); }
+ 50% {   -webkit-transform: translate(-70px, 250px); }
+ 100% {   -webkit-transform: translate(0px, 0px); }
+}
+
+.animate #sun {
+/*animation: <name> || <duration> || <timing-function> || <delay> || <iteration-count> || <direction> || <fill-mode>*/    
+    animation: sunset 48s linear 0s infinite;        
+    -webkit-animation: sunset 48s linear 0s infinite;
+    -moz-animation: sunset 48s linear 0s infinite;
+}
+
+/*BALLOON*/
+@keyframes "balloonmove" {
+ 0% {   	transform: translateX(-160px); }
+ 100% {   	transform: translateX(900px); }
+}
+
+@-moz-keyframes balloonmove {
+ 0% {   -moz-transform: translateX(-160px); }
+ 100% {   -moz-transform: translateX(900px); }
+}
+
+@-webkit-keyframes "balloonmove" {
+ 0% {   -webkit-transform: translateX(-160px); }
+ 100% {   -webkit-transform: translateX(900px); }
+}
+
+.animate #ballon {    
+    animation: balloonmove 7s linear 0s infinite;        
+    -webkit-animation: balloonmove 7s linear 0s infinite;        
+    -moz-animation: balloonmove 7s linear 0s infinite;        
+}
+
+/*BOAT*/
+@keyframes "rota" {
+ 0% {  	transform: rotate(-10deg); }
+ 50% {   	transform: rotate(10deg); }
+ 100% {   	transform: rotate(-10deg); }
+}
+
+@-moz-keyframes rota {
+ 0% {    -moz-transform: rotate(-10deg); }
+ 50% {   -moz-transform: rotate(10deg); }
+ 100% {    -moz-transform: rotate(-10deg); }
+}
+
+@-webkit-keyframes "rota" {
+ 0% {   -webkit-transform: rotate(-10deg); }
+ 50% {   -webkit-transform: rotate(10deg); }
+ 100% {   -webkit-transform: rotate(-10deg); }
+}
+
+.animate #boat {
+     animation: rota 7s ease-in 0s infinite;
+     -webkit-animation: rota 7s ease-in 0s infinite;     
+     -moz-animation: rota 7s ease-in 0s infinite;     
+}
+
+.loading {
+	visibility: hidden;
+}
+
+.animate {
+	visibility: visible;
+}
+
+.animate #descrip-txt {
+	visibility: hidden;
+}
+
+

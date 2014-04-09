@@ -1,0 +1,29 @@
+html{
+    font-family:"arial";
+    color:#555;
+    font-size:12px;
+}             
+
+#container{
+    margin: auto;
+    margin-top:20px;
+    position:relative;
+    overflow:hidden;
+}
+
+.notice{
+    width:100%;
+    text-align:center;
+    margin:1em auto;
+}
+
+.mButton{
+    border:none;
+    display:block;
+    width:120px;
+    height:40px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+    background-color:#8D8;
+}

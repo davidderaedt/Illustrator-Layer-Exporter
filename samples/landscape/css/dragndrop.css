@@ -1,0 +1,16 @@
+.selected{        
+    border:solid 1px blue;
+}
+
+img{
+    transition: opacity 0.3s;
+}
+
+#container img:hover{
+    opacity:0.7;
+    border:solid 1px #0FF;
+}
+#container p:hover{
+    opacity:0.7;
+    border:solid 1px #0FF;
+}
