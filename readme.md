@@ -60,7 +60,7 @@ If you want to use exported image files somewhere (say, in a webpage or a native
 There several options to help you with that.
 
 
-###Exporting to HTML
+###Exporting to HTML (static)
 
 
 If you want to export your whole composition to HTML, choose the corresponding option to generate an HTML file in the parent folder of destination folder for the images.
@@ -72,6 +72,10 @@ Layer Exporter will then use HTML tags to describe the composition, starting wit
 Any layer that is not suffixed with a supported image file will be considered as a child *div* of the main *div*. All art items inside this layer suffixed with a supported image file format will be considered as a child *img* tag of the parent *div*.
 
 ![image](https://raw.githubusercontent.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/web.png)
+
+###Exporting to HTML (dynamic)
+
+Alternatively, if you don't want to statically generate HTML and CSS code, you can choose to interpret the JSON file at runtime using javascript. You'll find sample code to help you do that in the `utils` folder of this repo.
 
 ###Experimental HTML features
 
@@ -132,7 +136,41 @@ V 1.0 - June 2013
 * Layer names cannot be set with the same UX as with art items (eg "set selected layers as PNG"). Rationale: the illustrator API does not let us know which layers are selected.
 
 
+##FAQ
+
+
+###Why do I need Illustrator CC / 17.0+?
+Sorry, CC apps have a new engine for extensions which lets you create panels using nothing but web standards. This is what this panel uses. You can still port it by yourself, of course.
+
+###How can I convert my rectangles to simple divs?
+
+Because it would be stupid to use image files for simple rectangles when you could use div, you can simply use a non-suffixed layer with a rectangle inside. Using the (experimental) background element feature, this layer will be converted to a div and the underlying rectangle will be use to set the CSS for the size and the color.
+
+###Can I inline SVG code in HTML rather than use img?
+
+Unfortunately, no. Illustrator's API does not expose the generated SVG code, it only allows to automate file export.
+
+###Hey, the exported SVG code sucks!
+While it does the job, the Illustrator SVG export engine is not so great in the first place. I highly recommend using SVGO for optimization.
+
+###Why doesn't it work with my appearances?
+Sorry, appearances are not supported at this stage.
+
+###Does it support symbols?
+Yes and no. Symbols instances will all be treated as separated image files.
+
+###What about sublayers?
+Not supported, amigos.
+
 
 ##About the source code
 
 This repository is the source for the panel. The underlying logic, written in ExtendScript, is located in the CSscript repository.
+
+##Special thanks to
+
+* [Franck Payen](https://twitter.com/fr32c), the best tester in the world, for his invaluable help.
+* [Stephane Baril](https://twitter.com/sbaril) for his amazing expertize
+* Adobe extensibility product managers [Hallgrimur Bjornsson](https://twitter.com/HallgrimurTh) and Jonathan Ferman for their help
+* And also: [Pierre Courtejoie](https://twitter.com/sPECtre), [Marc Autret](https://twitter.com/indiscripts) Adobe UX designers, the Photoshop Generator team, and [Stephanie Walter](https://twitter.com/WalterStephanie) for their continued support.
+
