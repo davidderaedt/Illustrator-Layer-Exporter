@@ -1,0 +1,103 @@
+{
+	"name": "Abeille.ai",
+	"width": 187,
+	"height": 210,
+	"layers": [
+		{
+			"x": "3.26",
+			"y": "21.31",
+			"r": "94.75",
+			"b": "34.35",
+			"width": "91.49",
+			"height": "13.04",
+			"name": "Desc-txt",
+			"visible": true,
+			"fontSize": 12,
+			"fontColor": "#000000",
+			"fontFamily": "Myriad Pro",
+			"text": "It can make honey",
+			"filename": "Desc.svg"
+		},
+		{
+			"x": "1.59",
+			"y": "1.15",
+			"r": "94.17",
+			"b": "16.82",
+			"width": "92.58",
+			"height": "15.67",
+			"name": "Title",
+			"visible": true,
+			"fontSize": 14,
+			"fontColor": "#29abe2",
+			"fontFamily": "Bernard MT Condensed",
+			"text": "This is a Bee",
+			"filename": "Title.svg"
+		},
+		{
+			"x": "121.78",
+			"y": "-0.00",
+			"r": "182.36",
+			"b": "98.13",
+			"width": "60.58",
+			"height": "98.13",
+			"name": "Aile G",
+			"visible": true,
+			"filename": "Aile-G.svg"
+		},
+		{
+			"x": "-0.00",
+			"y": "58.67",
+			"r": "107.32",
+			"b": "124.14",
+			"width": "107.32",
+			"height": "65.47",
+			"name": "Aile D",
+			"visible": true,
+			"filename": "Aile-D.svg"
+		},
+		{
+			"x": "60.92",
+			"y": "-55.00",
+			"r": "127.92",
+			"b": "270.00",
+			"width": "67.00",
+			"height": "325.00",
+			"name": "hidden",
+			"visible": false,
+			"filename": "hidden.svg"
+		},
+		{
+			"x": "143.18",
+			"y": "161.42",
+			"r": "161.47",
+			"b": "183.35",
+			"width": "18.29",
+			"height": "21.93",
+			"name": "OeilD.png",
+			"visible": true,
+			"filename": "OeilD.png"
+		},
+		{
+			"x": "162.28",
+			"y": "144.96",
+			"r": "184.81",
+			"b": "171.27",
+			"width": "22.53",
+			"height": "26.31",
+			"name": "OeilG",
+			"visible": true,
+			"filename": "OeilG.svg"
+		},
+		{
+			"x": "30.93",
+			"y": "59.00",
+			"r": "186.67",
+			"b": "209.01",
+			"width": "155.74",
+			"height": "150.01",
+			"name": "Corps.jpg",
+			"visible": true,
+			"filename": "Corps.jpg"
+		}
+	]
+}
