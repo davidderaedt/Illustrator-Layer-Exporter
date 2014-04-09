@@ -1,0 +1,210 @@
+{
+	"name": "LayerExporterFlagv3.ai",
+	"width": 992,
+	"height": 1185,
+	"layers": [
+		{
+			"x": "608.00",
+			"y": "477.50",
+			"r": "805.00",
+			"b": "672.00",
+			"width": "197.00",
+			"height": "194.50",
+			"layername": "desc",
+			"name": "desc",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 0,
+					"y": 0,
+					"r": "805.00",
+					"b": "672.00",
+					"width": "192.00",
+					"height": "192.00",
+					"type": "txt",
+					"name": "descTxt",
+					"fontSize": 18,
+					"fontColor": "#999999",
+					"fontFamily": "Helvetica",
+					"fontStyle": "Light",
+					"align": "right",
+					"text": "Asset Generator\rSVG, PNG, JPG \rHTML Page\rAll created in one click"
+				}
+			]
+		},
+		{
+			"x": "96.00",
+			"y": "470.73",
+			"r": "325.39",
+			"b": "695.09",
+			"width": "229.39",
+			"height": "224.36",
+			"layername": "texts.png",
+			"name": "texts",
+			"type": "png",
+			"filename": "texts.png",
+			"visible": true,
+			"items": [
+				
+			]
+		},
+		{
+			"x": "96.00",
+			"y": "544.00",
+			"r": "544.00",
+			"b": "704.00",
+			"width": "448.00",
+			"height": "160.00",
+			"layername": "banner",
+			"name": "banner",
+			"type": "div",
+			"visible": true,
+			"items": [
+				
+			],
+			"bgdColor": "#e1425f",
+			"opacity": 0.51
+		},
+		{
+			"x": "223.65",
+			"y": "63.65",
+			"r": "832.35",
+			"b": "1120.35",
+			"width": "608.70",
+			"height": "1056.70",
+			"layername": "strokes",
+			"name": "strokes",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 320,
+					"y": 864,
+					"r": "736.35",
+					"b": "1120.35",
+					"width": "192.00",
+					"height": "192.00",
+					"layername": "stroke1.svg",
+					"name": "stroke1",
+					"type": "svg",
+					"filename": "stroke1.svg"
+				},
+				{
+					"x": 0,
+					"y": 128,
+					"r": "416.35",
+					"b": "384.35",
+					"width": "192.00",
+					"height": "192.00",
+					"layername": "stroke2.svg",
+					"name": "stroke2",
+					"type": "svg",
+					"filename": "stroke2.svg"
+				},
+				{
+					"x": 416,
+					"y": 0,
+					"r": "832.35",
+					"b": "256.35",
+					"width": "192.00",
+					"height": "192.00",
+					"layername": "stroke3.svg",
+					"name": "stroke3",
+					"type": "svg",
+					"filename": "stroke3.svg"
+				}
+			]
+		},
+		{
+			"x": "352.00",
+			"y": "384.00",
+			"r": "832.00",
+			"b": "864.00",
+			"width": "480.00",
+			"height": "480.00",
+			"layername": "circles",
+			"name": "circles",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 128,
+					"y": 0,
+					"r": "832.00",
+					"b": "736.00",
+					"width": "352.00",
+					"height": "352.00",
+					"layername": "c1.png",
+					"name": "c1",
+					"type": "png",
+					"filename": "c1.png"
+				},
+				{
+					"x": 96,
+					"y": 32,
+					"r": "800.00",
+					"b": "768.00",
+					"width": "352.00",
+					"height": "352.00",
+					"layername": "c2.png",
+					"name": "c2",
+					"type": "png",
+					"filename": "c2.png"
+				},
+				{
+					"x": 64,
+					"y": 64,
+					"r": "768.00",
+					"b": "800.00",
+					"width": "352.00",
+					"height": "352.00",
+					"layername": "c3.png",
+					"name": "c3",
+					"type": "png",
+					"filename": "c3.png"
+				},
+				{
+					"x": 32,
+					"y": 96,
+					"r": "736.00",
+					"b": "832.00",
+					"width": "352.00",
+					"height": "352.00",
+					"layername": "c4.png",
+					"name": "c4",
+					"type": "png",
+					"filename": "c4.png"
+				},
+				{
+					"x": 0,
+					"y": 128,
+					"r": "704.00",
+					"b": "864.00",
+					"width": "352.00",
+					"height": "352.00",
+					"layername": "c5.png",
+					"name": "c5",
+					"type": "png",
+					"filename": "c5.png"
+				}
+			]
+		},
+		{
+			"x": "0.00",
+			"y": "-0.00",
+			"r": "992.00",
+			"b": "1184.00",
+			"width": "992.00",
+			"height": "1184.00",
+			"layername": "bgd",
+			"name": "bgd",
+			"type": "div",
+			"visible": true,
+			"items": [
+				
+			],
+			"bgdColor": "#333333"
+		}
+	]
+}

@@ -73,9 +73,15 @@ Any layer that is not suffixed with a supported image file will be considered as
 
 ![image](https://raw.githubusercontent.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/web.png)
 
+Here's what a typical HTML output could look like (go to the `samples` folder for more details).
+
+![image](https://raw.githubusercontent.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/html.png)
+
+
+
 ###Exporting to HTML (dynamic)
 
-Alternatively, if you don't want to statically generate HTML and CSS code, you can choose to interpret the JSON file at runtime using javascript. You'll find sample code to help you do that in the `utils` folder of this repo.
+Alternatively, if you don't want to statically generate HTML and CSS code, you can choose to interpret the JSON file at runtime using javascript. You'll find sample code to help you do that in the `utils` folder of this repo, and a sample *lanscape* project in the `samples` folder.
 
 ###Experimental HTML features
 
@@ -84,21 +90,25 @@ We're working on some additional features to help with HTML export. Since those 
 * Text: text items suffixed with *=text* will be converted to full HTML text with the corresponding CSS styles (font family, font size, color and alignment).
 * Div backgrounds: inside layers, path items named "#bgd" will be ignored but used to determine the background color and opacity of the parent *div*.
 
+For a full example of all those features, you can jump to the `samples` folder.
+
 
 ###Edge Animate project
 
-Layer Exporter has limited support for Adobe's *Edge Animate* Projects.
+Layer Exporter has (limited) support for Adobe's *Edge Animate* Projects.
 
 Since *Edge Animate* supports HTML as input, you could simply open it inside the tool, but you'd then be missing a few capabilities, such as the ability to group or create symbol.
 
 The *Import to Edge Animate* option lets you choose an existing .an file and will overwrite it with the corresponding data. A typical workflow would then consist of first creating a empty .an project, importing the illustrator composition via the *Import to Edge Animate* option, and then updating artwork as needed from Illustrator.
+
+You'll find an empty Edge Animate project in the `utils` folder.
 
 ###Exporting to other contexts
 
 
 Alternatively, you can choose to create a dump of the raw data of the composition so that you, a developer, or a 3rd party tool can interpret the data . Choose the `Create JSON data file` to create a JSON representation of the composition inside the image destination folder.
 
-
+![image](https://raw.githubusercontent.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/json.png)
 
 
 ##Release notes

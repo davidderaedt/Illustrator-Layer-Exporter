@@ -1,0 +1,132 @@
+#bgd{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:992px;
+	height:1184px;
+	background-color:#333333;
+}
+
+#c5{
+	position:absolute;
+	left:0px;
+	top:128px;
+	width:352px;
+	height:352px;
+}
+
+#c4{
+	position:absolute;
+	left:32px;
+	top:96px;
+	width:352px;
+	height:352px;
+}
+
+#c3{
+	position:absolute;
+	left:64px;
+	top:64px;
+	width:352px;
+	height:352px;
+}
+
+#c2{
+	position:absolute;
+	left:96px;
+	top:32px;
+	width:352px;
+	height:352px;
+}
+
+#c1{
+	position:absolute;
+	left:128px;
+	top:0px;
+	width:352px;
+	height:352px;
+}
+
+
+#circles{
+	position:absolute;
+	left:352px;
+	top:384px;
+	width:480px;
+	height:480px;
+}
+
+#stroke3{
+	position:absolute;
+	left:416px;
+	top:0px;
+	width:192px;
+	height:192px;
+}
+
+#stroke2{
+	position:absolute;
+	left:0px;
+	top:128px;
+	width:192px;
+	height:192px;
+}
+
+#stroke1{
+	position:absolute;
+	left:320px;
+	top:864px;
+	width:192px;
+	height:192px;
+}
+
+
+#strokes{
+	position:absolute;
+	left:224px;
+	top:64px;
+	width:609px;
+	height:1057px;
+}
+
+#banner{
+	position:absolute;
+	left:96px;
+	top:544px;
+	width:448px;
+	height:160px;
+	background-color:#e1425f;
+	opacity:0.51;
+}
+
+#texts{
+	position:absolute;
+	left:96px;
+	top:471px;
+	width:229px;
+	height:224px;
+}
+
+#descTxt{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:192px;
+	height:192px;
+	font-family:Helvetica;
+	font-size:18;
+	color:#999999;
+	font-weight:Light;
+	text-align:right;
+	margin:0px;
+}
+
+
+#desc{
+	position:absolute;
+	left:608px;
+	top:478px;
+	width:197px;
+	height:195px;
+}
+
