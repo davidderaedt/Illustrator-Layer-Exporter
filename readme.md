@@ -180,7 +180,7 @@ This repository is the source for the panel. The underlying logic, written in Ex
 ##Special thanks to
 
 * [Franck Payen](https://twitter.com/fr32c), the best tester in the world, for his invaluable help.
-* [Stephane Baril](https://twitter.com/sbaril) for his amazing expertize
+* [Stephane Baril](https://twitter.com/sbaril) for his amazing expertise
 * Adobe extensibility product managers [Hallgrimur Bjornsson](https://twitter.com/HallgrimurTh) and Jonathan Ferman for their help
 * And also: [Pierre Courtejoie](https://twitter.com/sPECtre), [Marc Autret](https://twitter.com/indiscripts) Adobe UX designers, the Photoshop Generator team, and [Stephanie Walter](https://twitter.com/WalterStephanie) for their continued support.
 
