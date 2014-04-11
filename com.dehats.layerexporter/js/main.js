@@ -90,13 +90,14 @@
             var precision = $('#svgPrecision').val();
             var outlineFonts = $('#svgFont').is(':checked');
             var embedImages = $('#svgEmbed').is(':checked');
+            var cssloc =  $('input[name=cssloc]:checked').val()
             var jpgquality = $('#jpgquality').val();
             var toHTML = $('#toHTML').is(':checked');
             var toEdgeAnimate = $('#edgeAnimate').is(':checked');
             var createJSON = $('#jsonCb').is(':checked');
             var sepCSS = $('#sepCSSCb').is(':checked');
-            
-            var code = '$._ext.exportLayers(' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + jpgquality;
+                        
+            var code = '$._ext.exportLayers(' + precision + ', ' + outlineFonts + ', ' + embedImages + ', ' + cssloc + ', ' + jpgquality;
             code += ', ' + createJSON + ', ' + toHTML + ', ' + sepCSS + ', ' + toEdgeAnimate + ');';
             
             console.log(code);

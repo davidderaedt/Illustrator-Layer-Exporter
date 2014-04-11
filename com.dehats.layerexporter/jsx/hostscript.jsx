@@ -11,14 +11,14 @@ $._ext = (function () {
     var ext = {};
     var destFolder;
     
-    ext.exportLayers = function (pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pJPGQuality, 
-                                  pCreateJSON, pToHTML, pSepCss, pToEdgeAnimate) {
+    ext.exportLayers = function (pSVGPrecision, pOutlineSVGFont, pEmbedSVGImages, pCSSloc, pJPGQuality, pCreateJSON, pToHTML, pSepCss, pToEdgeAnimate) {
         
         var imageParams = {
             precision: parseInt(pSVGPrecision, 10),
             svgFont: (pOutlineSVGFont!=true),
             jpgQuality: parseInt(pJPGQuality, 10),
-            embedImages: pEmbedSVGImages
+            embedImages: pEmbedSVGImages,
+            svgCssPropLoc:pCSSloc // 0 = presentation att, 1 = style el, 2 = style att
         };
         
         var outputParams = {

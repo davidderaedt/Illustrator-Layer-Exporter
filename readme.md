@@ -17,7 +17,7 @@ Open Illustrator and choose `Window > extensions > Adobe Echange` to open the ex
 
 ![image](https://raw.githubusercontent.com/davidderaedt/Illustrator-Layer-Exporter/master/pics/exchange-workflow.png)
 
-Alternatively, you can download and install the current [production ZXP](https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter.zxp) (stable) or the [development ZXP](https://github.com/davidderaedt/Illustrator-Layer-Exporter/raw/master/bin/LayerExporter-dev.zxp) (use with caution) for use with *Extension Manager CC*.
+Alternatively, you can download and install the current production ZXP (stable) or the development ZXP (use with caution) for use with *Extension Manager CC* from [the bin folder](https://github.com/davidderaedt/Illustrator-Layer-Exporter/tree/master/bin).
 
 
 
@@ -112,6 +112,16 @@ Alternatively, you can choose to create a dump of the raw data of the compositio
 
 
 ##Release notes
+
+
+v 2.1.0 - under development
+
+* Added HTML doctype
+* Art items are now correctly ignored from export if invisible
+* All invisible items are now correctly ignored from HTML output
+* Added css locations options for SVG
+
+
 
 V 2.0.1 - April 7th 2014
 

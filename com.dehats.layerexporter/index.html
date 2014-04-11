@@ -108,27 +108,54 @@
 
                 <input id="jpgquality" type="number" min="1" max="100" value="90" class="topcoat-text-input"><label>%</label>
                 <br><br>
+                
+                <hr>
+                
+                <Label>SVG Options:</Label>
+                <br><br>
 
+                <label>Decimal Precision</label>            
+                <input id="svgPrecision" type="number" min="1" max="4" value="1" class="topcoat-text-input">
+                <br><br>
 
                 <label class="topcoat-checkbox">
                   <input id="svgFont" type="checkbox" checked>
                   <div class="topcoat-checkbox__checkmark"></div>
-                  Outline SVG Text
+                  Outline Text
                 </label>            
                 <br><br>
-
-
+                
                 <label class="topcoat-checkbox">
                   <input id="svgEmbed" type="checkbox" checked>
                   <div class="topcoat-checkbox__checkmark"></div>
                   Embed SVG Images
                 </label> 
                 <br><br>
-
-
-                <label>SVG Decimal Precision</label>            
-                <input id="svgPrecision" type="number" min="1" max="4" value="1" class="topcoat-text-input">
+                
+                <Label>CSS</Label>
                 <br><br>
+                
+                <label class="topcoat-radio-button">
+                  <input type="radio" name="cssloc" checked value="0">
+                  <div class="topcoat-radio-button__checkmark"></div>
+                  Attributes
+                </label>
+                <br>
+                <br>
+                <label class="topcoat-radio-button">
+                  <input type="radio" name="cssloc" value="1">
+                  <div class="topcoat-radio-button__checkmark"></div>
+                  Styles
+                </label>
+                <br>
+                <br>
+                <label class="topcoat-radio-button">
+                  <input type="radio" name="cssloc" value="2">
+                  <div class="topcoat-radio-button__checkmark"></div>
+                  Style attributes
+                </label>
+                <br>
+                <br>
                 
             </div>            
             
