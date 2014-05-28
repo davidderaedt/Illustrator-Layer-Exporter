@@ -114,13 +114,13 @@ Alternatively, you can choose to create a dump of the raw data of the compositio
 ##Release notes
 
 
-v 2.1.0 - under development
+v 2.1.0 - May 28th 2014
 
 * Added HTML doctype
 * Art items are now correctly ignored from export if invisible
 * All invisible items are now correctly ignored from HTML output
 * Added css locations options for SVG
-
+* Added support for Illustrator next
 
 
 V 2.0.1 - April 7th 2014
