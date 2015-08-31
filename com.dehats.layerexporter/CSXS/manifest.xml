@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ExtensionManifest Version="4.0" ExtensionBundleId="com.dehats.layerexporter" ExtensionBundleVersion="2.1.0"
-		ExtensionBundleName="Layer Exporter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ExtensionManifest Version="5.0" ExtensionBundleId="com.dehats.layerexporter" ExtensionBundleVersion="2.1.1"
+        ExtensionBundleName="Layer Exporter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Author>David Deraedt</Author>
     <Abstract><![CDATA[Export all layers in just one click]]></Abstract>    
-	<ExtensionList>
-		<Extension Id="com.dehats.layerexporter" Version="2.1.0" />
-	</ExtensionList>
-	<ExecutionEnvironment>
-		<HostList>
-            <Host Name="ILST" Version="[17.0,18.9]" />
-		</HostList>
-		<LocaleList>
-			<Locale Code="All" />
-		</LocaleList>
-		<RequiredRuntimeList>
-			<RequiredRuntime Name="CSXS" Version="4.0" />
-		</RequiredRuntimeList>
-	</ExecutionEnvironment>
-	<DispatchInfoList>
-		<Extension Id="com.dehats.layerexporter">
-			<DispatchInfo >
-				<Resources>
-				<MainPath>./index.html</MainPath>
-				<ScriptPath>./jsx/hostscript.jsx</ScriptPath>
-				</Resources>
-				<Lifecycle>
-					<AutoVisible>true</AutoVisible>
-				</Lifecycle>
-				<UI>
-					<Type>Panel</Type>
-					<Menu>Layer exporter</Menu>
-					<Geometry>
-						<Size>
-							<Height>300</Height>
-							<Width>300</Width>
-						</Size>
-					</Geometry>
-				</UI>
-			</DispatchInfo>
-		</Extension>
-	</DispatchInfoList>
+    <ExtensionList>
+        <Extension Id="com.dehats.layerexporter" Version="2.1.1" />
+    </ExtensionList>
+    <ExecutionEnvironment>
+        <HostList>
+            <Host Name="ILST" Version="[17.0,2100.0]" />
+        </HostList>
+        <LocaleList>
+            <Locale Code="All" />
+        </LocaleList>
+        <RequiredRuntimeList>
+            <RequiredRuntime Name="CSXS" Version="5.0" />
+        </RequiredRuntimeList>
+    </ExecutionEnvironment>
+    <DispatchInfoList>
+        <Extension Id="com.dehats.layerexporter">
+            <DispatchInfo >
+                <Resources>
+                <MainPath>./index.html</MainPath>
+                <ScriptPath>./jsx/hostscript.jsx</ScriptPath>
+                </Resources>
+                <Lifecycle>
+                    <AutoVisible>true</AutoVisible>
+                </Lifecycle>
+                <UI>
+                    <Type>Panel</Type>
+                    <Menu>Layer exporter</Menu>
+                    <Geometry>
+                        <Size>
+                            <Height>300</Height>
+                            <Width>300</Width>
+                        </Size>
+                    </Geometry>
+                </UI>
+            </DispatchInfo>
+        </Extension>
+    </DispatchInfoList>
 </ExtensionManifest>
